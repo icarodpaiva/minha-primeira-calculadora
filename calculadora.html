@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="visor">
+        <input type="text" id="telaAux" disabled />
+        <input type="text" id="tela" disabled />
+      </div>
+      <div class="botoes">
+        <button class="funcoes" onclick="limpaUltimo()">&larr;</button>
+        <button class="funcoes" onclick="limpaTudo()">C</button>
+        <button class="funcoes" onclick="trocaSinal()">&plusmn;</button>
+        <button class="funcoes" onclick="calcular()">=</button>
+        <button onclick="inserirNum(7)">7</button>
+        <button onclick="inserirNum(8)">8</button>
+        <button onclick="inserirNum(9)">9</button>
+        <button class="funcoes" onclick="operacao('+')">+</button>
+        <button onclick="inserirNum(4)">4</button>
+        <button onclick="inserirNum(5)">5</button>
+        <button onclick="inserirNum(6)">6</button>
+        <button class="funcoes" onclick="operacao('-')">-</button>
+        <button onclick="inserirNum(1)">1</button>
+        <button onclick="inserirNum(2)">2</button>
+        <button onclick="inserirNum(3)">3</button>
+        <button class="funcoes" onclick="operacao('*')">*</button>
+        <button onclick="inserirNum(0)">0</button>
+        <button onclick="pontoFlutuante('.')">.</button>
+        <button class="funcoes" onclick="operacao('/')">/</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
